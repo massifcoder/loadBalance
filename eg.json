@@ -1,0 +1,20 @@
+{
+    "strategy" : "round-robin",
+    "port" : 8080,
+    "servers" : [
+        {
+            "domain" : "www.google.com",
+            "port" : 8000
+        },
+        {
+            "domain" : "www.youtube.com",
+            "port" : 9000
+        }
+    ],
+    "security" : {
+        "criteria" : "ip",
+        "max_per_user" : 20,
+        "block" : "true",
+        "hold" : "false"
+    }
+}
